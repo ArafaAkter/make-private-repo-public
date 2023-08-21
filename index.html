@@ -24,27 +24,29 @@
 </head>
 <body class="bg-[#F8F8F8]">
         <header>
-           <div class="flex justify-around items-center bg-[#F9F6E2] p-20  text-center">
-            <div class=" font-family w-1/2">
-                <h4 class="font-medium mb-4">---SALE FEVER---</h4>
+           <div class="lg:flex justify-around items-center bg-[#F9F6E2] p-5 lg:p-20  text-center">
+            <div class=" font-family lg:w-1/2">
+                <h4 class="font-medium pt-10">---SALE FEVER---</h4>
                 <h1 class="font-bold text-6xl mb-8 ">Purchase TK 200 or above & get  <span class="text-[#E527B2]">20% off</span></h1>
                    <h4 class="font-semiboldtext-2xl mt-3 ">Use Promo Code<span class=" bg-[#E527B2] rounded-lg p-4 ml-3 text-white ">SELL200</span></h4>
             </div>
-            <div class="w-1/2">
+            <div class="lg:w-1/2">
                 <img src="images/Summer 1.png" alt="">
             </div>
            </div>
         </header>
 
         <main>
-            <!-- Kitchenware section -->
+        <section class=" lg:flex  ">
+           <section>
+                 <!-- Kitchenware section -->
            <section>
             
-            <h1 class="font-family font-semibold text-4xl text-black ml-10 mb-10 mt-10">Kitchenware</h1>
-            <div class="ml-10 mb-10 grid grid-cols-3">
-                <div class="card w-96 bg-[#FFF] shadow-lg p-10  ">
+            <h1 class="font-family font-semibold text-4xl text-black m-10">Kitchenware</h1>
+            <div class="lg:ml-10 mb-10 grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <div  onclick="handelBtn1()" class="card bg-[#FFF] w-10/12 mx-auto shadow-lg p-10 ">
                     <figure class="bg-[#F8F8F8] px-10 pt-10 rounded-lg">
-                      <img src="images/prod1.png" />
+                      <img src="images/prod1.png"/>
                     </figure>
                     <div class="card-body items-center text-center">
                         <div class="rating">
@@ -54,11 +56,11 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                           </div>
-                          <h4 class=" font-family font-semibold">K. Accessories</h4>
+                          <h4 id="text1" class=" font-family font-semibold">K. Accessories</h4>
                           <p class="font-family font-normal text-slate-500">39.00 TK</p>
                     </div>
                   </div>
-                <div class="card w-96 bg-[#FFF] shadow-lg p-10  ">
+                <div   onclick="handelBtn2()" class="card w-10/12 mx-auto bg-[#FFF] shadow-lg p-10  ">
                     <figure class="bg-[#F8F8F8] px-10 pt-10 rounded-lg">
                       <img src="images/prod2.png" />
                     </figure>
@@ -70,11 +72,11 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                           </div>
-                          <h4 class=" font-family font-semibold">K. Accessories</h4>
+                          <h4 id="text2"  class=" font-family font-semibold">K. Accessories</h4>
                           <p class="font-family font-normal text-slate-500">25.00 TK</p>
                     </div>
                   </div>
-                <div class="card w-96 bg-[#FFF] shadow-lg p-10  ">
+                <div onclick="handelBtn3()" class="card w-10/12 mx-auto bg-[#FFF] shadow-lg p-10  ">
                     <figure class="bg-[#F8F8F8] px-10 pt-10 rounded-lg">
                       <img src="images/prod3.png" />
                     </figure>
@@ -86,20 +88,18 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                           </div>
-                          <h4 class=" font-family font-semibold">Home Cooker</h4>
+                          <h4 id="text3" class=" font-family font-semibold">Home Cooker</h4>
                           <p class="font-family font-normal text-slate-500">49.00 TK</p>
                     </div>
                   </div>
-              
-            
                 </div>
            </section>
 
            <!-- Sportswear section -->
            <section>
-            <h1 class="font-family font-semibold text-4xl text-black ml-10 mb-10 mt-10">Sportswear</h1>
-            <div class="ml-10 mb-10 grid grid-cols-3">
-                <div class="card w-96 bg-[#FFF] shadow-lg p-10  ">
+            <h1 class="font-family font-semibold text-4xl text-black m-10">Sportswear</h1>
+            <div class="lg:ml-10 mb-10 grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <div onclick="handelBtn4()" class="card w-10/12 mx-auto bg-[#FFF] shadow-lg p-10  ">
                     <figure class="bg-[#F8F8F8] px-10 pt-10 rounded-lg">
                       <img src="images/prod4.png" />
                     </figure>
@@ -111,11 +111,11 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                           </div>
-                          <h4 class=" font-family font-semibold">Sports Back Cap</h4>
+                          <h4 id="text4" class=" font-family font-semibold">Sports Back Cap</h4>
                           <p class="font-family font-normal text-slate-500">49.00 TK</p>
                     </div>
                   </div>
-                <div class="card w-96 bg-[#FFF] shadow-lg p-10  ">
+                <div onclick="handelBtn5()" class="card w-10/12 mx-auto bg-[#FFF] shadow-lg p-10  ">
                     <figure class="bg-[#F8F8F8] px-10 pt-10 rounded-lg">
                       <img src="images/prod5.png" />
                     </figure>
@@ -127,11 +127,11 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                           </div>
-                          <h4 class=" font-family font-semibold">Full Jersey Set</h4>
+                          <h4 id="text5" class=" font-family font-semibold">Full Jersey Set</h4>
                           <p class="font-family font-normal text-slate-500">69.00 TK</p>
                     </div>
                   </div>
-                <div class="card w-96 bg-[#FFF] shadow-lg p-10  ">
+                <div onclick="handelBtn6()" class="card w-10/12 mx-auto bg-[#FFF] shadow-lg p-10  ">
                     <figure class="bg-[#F8F8F8] px-10 pt-10 rounded-lg">
                       <img src="images/prod6.png" />
                     </figure>
@@ -143,7 +143,7 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                           </div>
-                          <h4 class=" font-family font-semibold">Sports cates</h4>
+                          <h4 id="text6" class=" font-family font-semibold">Sports cates</h4>
                           <p class="font-family font-normal text-slate-500">159.00 TK</p>
                     </div>
                   </div>
@@ -152,64 +152,36 @@
                 </div>
            </section>
 
-           <!-- Furniture section -->
+           
 
-           <section>
-            <h1 class="font-family font-semibold text-4xl ml-10  text-black mb-10 mt-10">Furniture</h1>
-            <div class="ml-10 mb-10 grid grid-cols-3">
-                <div class="card w-96 bg-[#FFF] shadow-lg p-10  ">
-                    <figure class="bg-[#F8F8F8] px-10 pt-10 rounded-lg">
-                      <img src="images/prod7.png" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          </div>
-                          <h4 class=" font-family font-semibold">Single Relax Chair</h4>
-                          <p class="font-family font-normal text-slate-500">185.00 TK</p>
-                    </div>
-                  </div>
-                <div class="card w-96 bg-[#FFF] shadow-lg p-10  ">
-                    <figure class="bg-[#F8F8F8] px-10 pt-10 rounded-lg">
-                      <img src="images/prod8.png" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          </div>
-                          <h4 class=" font-family font-semibold">Children play</h4>
-                          <p class="font-family font-normal text-slate-500">299.00 TK</p>
-                    </div>
-                  </div>
-                <div class="card w-96 bg-[#FFF] shadow-lg p-10  ">
-                    <figure class="bg-[#F8F8F8] px-10 pt-10 rounded-lg">
-                      <img src="images/prod9.png" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                        <div class="rating">
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          </div>
-                          <h4 class=" font-family font-semibold">Flexible Sofa</h4>
-                          <p class="font-family font-normal text-slate-500">339.00 TK</p>
-                    </div>
-                  </div>
-              
-            
-                </div>
+          
            </section>
 
+           <section class="lg:mt-32">
+           
+            <div class="w-10/12 mx-auto h-auto bg-[#FFF] mb-5 p-10 rounded-lg">
+                <h1 class="font-family font-medium">Have coupon?</h1>
+               <input class="bg-slate-50 rounded-lg border-solid" type="text" >
+               <button class="bg-[#E527B2] rounded-lg p-3 text-white mt-2">Apply</button>
+            </div>
+            <div class="w-10/12 mx-auto h-auto bg-[#FFF] p-10 rounded-lg">
+                 <div id="clicked-item" class="">
+
+                 </div>
+                <hr>
+                <ol class="ml-5 font-family font-medium">
+                    <li>Total price : <span class="text-stone-500"><span class="">257.00</span>TK</span></li>
+                    <li>Discount : <span class="text-stone-500"><span class="">257.00</span>TK</span></li>
+                    <li>Total : <span class="text-stone-500"><span class="">257.00</span>Tk</span></li>
+                </ol>
+                <hr>
+
+            </div>
+            <button class="bg-[#E527B2] rounded-lg p-5 text-white -mt-5 ml-20">Make Purchase</button>
+        
+        </section>
+          
+        </section>
         </main>
 
         <script src="js/jsCode.js"></script>
